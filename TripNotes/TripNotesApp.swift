@@ -11,7 +11,7 @@ import SwiftUI
 struct TripNotesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MapScreenView()
         }
     }
 }
