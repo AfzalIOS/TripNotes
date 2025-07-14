@@ -15,7 +15,7 @@ struct MapScreenView: View {
     @State private var region = MapCameraPosition.region(
         MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 24.8607, longitude: 67.0011),
-            span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
+            span: MKCoordinateSpan(latitudeDelta: 0.6, longitudeDelta: 0.6)
         )
     )
     
