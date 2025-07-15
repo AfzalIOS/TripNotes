@@ -18,23 +18,10 @@ class MemoryViewModel: ObservableObject {
         
     }
     
-    func addMemory(title: String, date: Date, note: String, image: UIImage, location: CLLocationCoordinate2D, rating: Int ){
-        
-        let newMemory = MemoryModel(
-                   id: UUID(),
-                   title: title,
-                   date: date,
-                   coordinate: CoordinateCodable(from: location),
-                   note: note,
-                   imageData: image.jpegData(compressionQuality: 0.8) ?? Data(),
-                   rating: rating
-                   
-                   )
-        memories.append(newMemory)
-        
-        
-        
-    }
+    func addMemory(_ memory: MemoryModel) {
+           memories.append(memory)
+           saveMemories()
+       }
     
     func saveMemories() {
             MemoryStorage.save(memories: memories)

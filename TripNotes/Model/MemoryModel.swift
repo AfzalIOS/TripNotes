@@ -10,14 +10,15 @@ import CoreLocation
 import SwiftUI
 
 struct MemoryModel: Identifiable, Codable {
-    let id: UUID
-    let title: String
-    let date: Date
-    let coordinate: CoordinateCodable
-    let note: String
-    let imageData: Data
-    let rating: Int
-    
-    
+    var id: UUID
+    var title: String
+    var date: Date
+    var coordinate: CoordinateCodable
+    var note: String
+    var imageData: Data
+    var rating: Int
 }
+
+
+
 

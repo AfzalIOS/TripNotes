@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict/>
-	</array>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>This app needs access to your location to save memories on map.</string>
 
@@ -14,6 +10,5 @@
 
     <key>NSPhotoLibraryUsageDescription</key>
     <string>We need access to your photo library to save trip memories.</string>
-
 </dict>
 </plist>
