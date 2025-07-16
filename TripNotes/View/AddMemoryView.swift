@@ -9,7 +9,7 @@ struct AddMemoryView: View {
 
     @State private var title: String = ""
     @State private var note: String = ""
-    @State private var rating: Int = 3
+    @State private var rating: Int = 2
     @State private var image: UIImage? = nil
     @State private var showImagePicker = false
 
